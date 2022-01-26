@@ -48,28 +48,29 @@ public class WorkPanel extends JPanel {
 			new ExceptionDialog(ex);
 		}
 	}
-
+	
+	//Color change here
 	void jbInit() throws Exception {
 		border1 =
 			BorderFactory.createCompoundBorder(
 				BorderFactory.createBevelBorder(
 					BevelBorder.LOWERED,
-					Color.white,
-					Color.white,
+					Color.red,	//Was white
+					Color.black,	//Was white
 					new Color(124, 124, 124),
 					new Color(178, 178, 178)),
 				BorderFactory.createEmptyBorder(0, 2, 0, 0));
 
 		this.setLayout(borderLayout1);
 		toolBar.setOrientation(JToolBar.VERTICAL);
-		toolBar.setBackground(Color.white);
+		toolBar.setBackground(Color.white);	//Was white
 
 		toolBar.setBorderPainted(false);
 		toolBar.setFloatable(false);
 		panel.setLayout(cardLayout1);
 
 		agendaB.setBackground(Color.white);
-		agendaB.setMaximumSize(new Dimension(60, 80));
+		agendaB.setMaximumSize(new Dimension(60, 80));	//Was 60, 80
 		agendaB.setMinimumSize(new Dimension(30, 30));
 
 		agendaB.setFont(new java.awt.Font("Dialog", 1, 10));
