@@ -261,7 +261,7 @@ public class AppFrame extends JFrame {
                 .getImage());
         contentPane = (JPanel) this.getContentPane();
         contentPane.setLayout(borderLayout1);
-        //this.setSize(new Dimension(800, 500));
+        this.setSize(new Dimension(800, 500));	//Uncommented
         this.setTitle("Memoranda - " + CurrentProject.get().getTitle());
         //Added a space to App.VERSION_INFO to make it look some nicer
         statusBar.setText(" Version:" + App.VERSION_INFO + " (Build "
