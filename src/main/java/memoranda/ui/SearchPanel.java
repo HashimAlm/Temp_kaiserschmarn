@@ -91,7 +91,7 @@ public class SearchPanel extends JPanel {
         wholeWCB.setFont(new java.awt.Font("Dialog", 1, 10));
         searchB.setEnabled(false);
         searchB.setFont(new java.awt.Font("Dialog", 1, 11));
-        searchB.setMaximumSize(new Dimension(72, 25));
+        searchB.setMaximumSize(new Dimension(3000, 3141)); //Was smaller
         searchB.setMinimumSize(new Dimension(2, 25));
         searchB.setPreferredSize(new Dimension(70, 25));
         searchB.setMargin(new Insets(0, 0, 0, 0));
